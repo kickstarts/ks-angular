@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "name": "Dath Vader",
+      "email": "darthvader@domain.com.br",
+      "phone": "11985859080",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "name": "John Rambo",
+      "email": "rambo@domain.com",
+      "phone": "11985859080"
+    },
+    {
+      "name": "Chuck Norris",
+      "email": "cnorris@domain.com.br",
+      "phone": "11985859080",
+      "id": 3
+    },
+    {
+      "name": "Code Geek",
+      "email": "code@geekdomain.com",
+      "phone": "11986907065",
+      "id": 4
+    }
+  ]
+}

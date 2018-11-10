@@ -1,0 +1,28 @@
+<div id="content" class="container push-top">
+
+  <h1 class="h3 push-bottom">{{ title }}</h1>
+
+  <div class="d-flex justify-content-center">
+      <a class="btn btn-success btn-sm btn-block" routerLink="create">Add User</a>
+  </div>
+  <table class="table table-hover table-border push-top">
+    <thead>
+      <tr>
+        <td>#ID</td>
+        <td>Name</td>
+        <td>Actions</td>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let user of users | async">
+        <td>{{ user.id }}</td>
+        <td>
+          <span>{{ user.name }}</span><br/>
+          <span><small><em>{{ user.email }}</em></small></span>
+        </td>
+        <td class="d-flex justify-content-end align-items-center"><a [routerLink]="['/users/edit', user.id]" class="btn btn-primary btn-sm mg-right-10">Edit</a> <button type="button" (click)="removeUser(user.id)" class="btn btn-danger btn-sm">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
